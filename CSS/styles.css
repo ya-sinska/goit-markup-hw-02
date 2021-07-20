@@ -2,6 +2,7 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-text-color: #2196f3;
+  --accent-hover-hero-btn: #188ce8;
   --light-color: #fff;
   --dark-color: #000;
   --background-color-section: #f5f4fa;
@@ -62,7 +63,7 @@ body {
 .site-nav-item {
   color: var(--secondary-text-color);
 }
-.site-nav-item-current {
+.current {
   color: var(--accent-text-color);
 }
 
@@ -104,6 +105,10 @@ body {
 
   cursor: pointer;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-hover-hero-btn);
+}
 /* Cекція переваг компанії */
 .benefits-title {
   color: var(--secondary-text-color);
@@ -137,7 +142,6 @@ body {
   background-color: var(--light-color);
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .representation-cards-title {
@@ -172,6 +176,19 @@ body {
 .button-item {
   background-color: var(--background-color-section);
   color: var(--secondary-text-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+.button-item-current {
+  background-color: var(--accent-text-color);
+  color: var(--light-color);
 
   font-family: inherit;
   font-weight: 500;
